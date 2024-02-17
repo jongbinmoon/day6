@@ -1,0 +1,37 @@
+body{
+    background-color: tomato;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+}
+
+.big{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* 왜 없어지지? */
+    width :200px;
+    height:200px;
+    background-color: bisque;
+    border: 2px solid black;
+}
+.small{
+    width:30px;
+    height:30px;
+    background-color: teal;
+    /* margin-top: 30px; */
+    border: 2px solid white;
+}
+
+#long{
+    width:180px;
+    border: 2px dashed white;
+}
+.small:first-child{
+    margin-top: 10px;
+}
+.small:last-child{
+    margin-bottom:10px;
+}
