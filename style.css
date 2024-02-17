@@ -1,37 +1,40 @@
 body{
     background-color: tomato;
+    height:100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height:100vh;
 }
 
 .big{
+    width :200px;
+    height:200px;
+    /* #답지에서는 padding을 20px 줌 */
+    padding: 20px;
+    /* padding을 주는게 훨씬 이쁘네 */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    /* 왜 없어지지? */
-    width :200px;
-    height:200px;
-    background-color: bisque;
+    /* flex : wrap; */
+    background-color: wheat;
     border: 2px solid black;
 }
 .small{
-    width:30px;
-    height:30px;
+    width:50px;
+    height:50px;
     background-color: teal;
     /* margin-top: 30px; */
-    border: 2px solid white;
+    border: 3px solid white;
 }
 
-#long{
-    width:180px;
-    border: 2px dashed white;
+.long{
+    width:100%;
+    border-style: dashed;
 }
-.small:first-child{
-    margin-top: 10px;
+/* .small:first-child{
+    margin-top: 20px;
 }
 .small:last-child{
-    margin-bottom:10px;
-}
+    margin-bottom:20px;
+} */
